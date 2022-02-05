@@ -1,0 +1,83 @@
+/* Block */
+
+    .discover {
+        height: auto;
+        width: 100%;
+        background-color: white;
+        margin-left: 24px;
+        margin-bottom: 100px;
+    }
+
+/* Element */
+
+    .discover__title {
+        font-size: 22px;
+        margin-top: 20px;
+        font-weight: bold;
+        color: var(--black);
+    }
+
+    .discover__description {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.05em;
+    }
+
+    .discover__description > p {
+        margin-top: 0px;
+    }
+
+/* Element */
+
+    .discover__grid {
+        grid-template-columns: repeat(3, auto);
+        display: flex;
+        overflow: auto;
+    }
+
+    .discover__grid a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .discover__picture {
+        height: 272px;
+        width: 272px;
+        border-radius: 10px;
+    }
+
+/* Modifier */
+
+    .discover__picture--title {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+
+/* Media queries */
+
+    @media (min-width: 744px) {
+        .discover {
+            margin-bottom: 24px;
+            margin-top: 2px;
+        }
+    }
+
+    @media (min-width: 1128px) {
+        .discover {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .discover__picture {
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+        }
+        .discover__title {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .discover__description {
+            font-size: 26px;
+        }
+    }

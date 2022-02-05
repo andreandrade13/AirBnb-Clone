@@ -1,0 +1,127 @@
+/* Block */
+
+    .explore {
+        display: flex;
+        margin-top: 4px;
+        margin-bottom: 48px;
+    }
+
+/* Element */
+
+    .explore__paddles {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 16px;
+        max-width: 1600px;
+    }
+
+    .explore__title {
+        font-size: 22px;
+        color: var(--black);
+        margin: 0px;
+        line-height: 28px;
+        padding-bottom: 20px;
+    }
+
+    .explore__grid {
+        overflow-x: auto;
+        display: grid;
+        gap: 12px;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: repeat(4, 611px);
+        grid-auto-flow: column;
+        scroll-snap-type: x mandatory;
+    }
+
+    .explore__scrollable {
+        scroll-snap-align: start;
+        overflow: hidden;
+        height: 100%;
+        display: inline-block;
+        
+    }
+
+    .explore__clickable {
+        -webkit-box-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgb(34, 34, 34);
+        align-items: center;
+        text-decoration: none;
+        display: flex;
+    }
+
+/* Modifier */
+
+    .explore__clickable--img {
+        position: relative;
+        background-color: rgb(221, 221, 221);
+        overflow: hidden;
+        border-radius: 12px;
+        flex: 0 0 72px;
+        height: 72px;
+        margin-right: 12px;
+    }
+
+    .explore__clickable--background {
+        vertical-align: bottom;
+        height: 100%;
+        width: 100%;
+        min-height: 1px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .explore__clickable--text {
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    
+    .explore__clickable--wrapper {
+        flex: 0 1 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-bottom: 2px;
+        
+        
+    }
+
+/* Media queries */
+
+    @media (min-width: 744px) {
+        .explore {
+            margin-top: 40px;
+            margin-bottom: 8px;
+        }
+        .explore__paddles {
+            padding-left: 40px;
+        }
+        .explore__grid {
+            grid-template-columns: repeat(4, 221px);
+        }
+        .explore__title {
+            font-size: 26px;
+        }
+    }
+
+    @media (min-width: 1128px) {
+        .explore {
+            margin-top: 56px;
+            margin-bottom: 24px; 
+        }
+        .explore__title,
+        .live__box--title {
+            font-size: 32px;
+        }
+        .explore__paddles {
+            padding-left: 80px;
+        }
+        .explore__grid {
+            grid-template-columns: repeat(4, 300px);
+        }
+    }

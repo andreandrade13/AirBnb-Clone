@@ -1,0 +1,119 @@
+/* Block */
+
+    .host {
+        margin-bottom: 24px;
+        padding-left: 65px;
+        padding-right: 80px;
+    }
+
+/* Element */
+
+    .host__box { /* min-width: 220 until 743px */
+        z-index: 0;
+        background: rgb(72, 72, 72);
+        border: 0px none;
+        display: block;
+        height: auto;
+        overflow-x: hidden;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    .host__textbox {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 32px;
+        padding-left: 0px;
+        padding-right: 32px;
+        z-index: 1;
+        inset: -1px 0px;
+    }
+
+    .host__bt {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+        touch-action: manipulation;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: normal;
+        font-family: inherit;
+        color: rgb(72, 72, 72);
+        padding: 9px 16px;
+        border: 0px;
+        background: rgb(255, 255, 255);
+        border-radius: 8px;
+    }
+
+/* Modifier */
+
+    .host__box--pic {
+        object-fit: cover;
+        vertical-align: bottom;
+        height: 100%;
+        width: 100%;
+    }
+
+    .host__box--pic2 {
+        display: none;
+    }
+
+    .host__textbox--title {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: normal;
+        font-family: inherit;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        white-space: pre-wrap;
+    }
+
+    .host__textbox--phrase {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: normal;
+        font-family: inherit;
+        color: rgb(255, 255, 255);
+        padding-top: 8px;
+        white-space: pre-line;
+    }
+
+/* Media queries */
+
+    @media (min-width: 744px) {
+        .host__box--pic {
+            display: none;
+        }
+        .host__box--pic2{
+            display: block;
+            height: 360px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .host__textbox {
+            align-items: flex-start;
+            justify-content: center;
+            width: 280px;
+            text-align: left;
+            padding-left: 24px;
+        }
+    }
+
+    @media (min-width: 1128px) {
+        .host__box--pic2 {
+            height: 400px;
+        }
+    }

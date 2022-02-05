@@ -1,0 +1,64 @@
+/* Global */
+
+@font-face {
+    font-family: "Circular";
+    src: url("font/AirbnbCerealBook.ttf");
+}
+
+:root {
+    --black: #222222;
+    --white: #f7f7f7;
+    --backwhite: #FFFFFF;
+    --gray: #a3a3a3;
+    --backgray: #DDDDDD;
+}
+
+/* Block */
+
+    .footer {
+        height: auto;
+        background-color: var(--white);
+        padding: 32px;
+        border-top: 1px solid var(--backgray);
+    }
+
+
+/* Element */
+
+    .footer__list {
+        list-style: none;
+        padding: 0;
+    }
+
+/* Modifier */
+
+    .footer__list--title {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--black);
+    }
+
+    .footer__list--links{
+        margin: 12px 0 0 0;        
+    }
+
+    .footer__list--links a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+
+/* Media queries */
+
+    @media (min-width: 744px) {
+        .footer__list {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            display: grid;           
+        }
+        .footer__list2x3 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }

@@ -1,0 +1,41 @@
+/* Block */
+
+    .copyright {
+        height: 74px;
+        border-top: 1px solid var(--backgray);
+        padding-top: 24px;
+        padding-bottom: 24px;
+        background-color: var(--white);
+    }
+
+/* Element */
+
+    .copyright__language {
+        color: var(--black);
+        padding-left: 10px;
+    }
+
+    .copyright__phrase {
+        padding-left: 24px;
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .copyright__list {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        padding-left: 24px;
+        margin: 0;
+    }
+
+
+/* Modifier */
+
+    .copyright__list--links {
+        padding-right: 15px;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 13px;
+
+    }

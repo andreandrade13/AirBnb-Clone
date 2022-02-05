@@ -1,0 +1,73 @@
+Airbnb Page (Mobile-First) 
+
+
+DONE 1 - Covid Banner - link to another page, center, underlined, no hover
+Layout:  
+    1.1 - 1 row an 1 column
+        1.2 - anchor text - design Max 743px Ok: gray background and black text - 
+                            design over 743px Ok: black background and gray underlined text
+
+
+2 - Search Bar
+    2.1 - 1 row and 1 column
+        2.2 - under 744px: 1 div with white background 
+        2.2 - SVG search button and search input (max 743px)
+              design ALMOST ok (misses fixed position): white div containing a search SVG and a input text, no borders and with box-shadow
+        2.3 - Over 743px: header with Anchor SVG Airbnb, ul list with group of buttons below, nav links on the right side
+
+3 - Main section "Melhor da natureza"
+    3.1 background image
+        3.1.1 - under 743px: 
+    
+    3.1 - 3 rows and 1 column
+        3.2 - 1 title
+            3.3 - 1 span
+                3.4 - 1 button with external link 
+
+4 - Section "Explore"
+    4.1 - 4 rowns and 2 columns
+        4.2 - 1 title
+            4.3 - grid 4x2
+                4.4 - box with picture, subtitle and explain text
+
+5 - Section "Viva em qualquer lugar"
+    5.1 - 1 row and 4 columns
+        5.2 - 1 title
+            5.3 - grid 4x1
+                5.4 - box with picture and explain text 
+
+
+6 - Section "Seja um anfitrião"
+    6.1 - 3 rows and 1 column
+        6.2 - 1 title, 1 explain text, 1 button with external link
+         6.3 - 1 picture
+
+7 - Section "Descubra as experiencias"
+    7.1 - 1 row and 3 columns
+        7.2 - 1 title, 1 explain text
+            7.3 - grid 1x3
+                7.4 - 1 picture, 1 title and 1 explain text
+
+8 - Footer
+    8.1 - 1 row and 32 lines
+        8.2 - 4 sections (until 743px) 
+            8.2.1 - section 1: 1 title and 10 links
+                  section 2: 1 title and 6 links
+                  section 3: 1 title and 6 links
+                  section 4: 1 title and 5 links
+        8.2 - 4 sections (until 1127px)
+                section 1: 3 columns and 4 rows
+                section 2: 3 columns and 2 rows
+                section 3: 3 columns and 2 rows
+                section 4: 3 columns and 2 rows
+
+9 - Copyrights & Language
+    9.1 - 3 rows and 1 column
+        9.2 row 1: SVG/Unicode link and language selector, SVG/Unicode currency and currency selector 
+        9.2 row 2: Unicode copyright and text
+        9.2 row 3: list with 4 links
+
+10 - Static Bar
+    10.1 - 2 rows and 3 columns
+        10.2 1 svg per column
+            10.3 1 explain text per column

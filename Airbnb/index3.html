@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb: alojamentos de férias, cabanas, casas de praia, casas e 
+        experiências únicas</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="searchBg.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="live.css">
+    <link rel="stylesheet" href="host.css">
+    <link rel="stylesheet" href="discover.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="copyright.css">
+    <link rel="shortcut icon" 
+    sizes="76x76" 
+    type="image/x-icon" 
+    href="images/favicon.ico">
+
+
+</head>
+<body>
+    <!-- Banner -->
+
+    <div class="banner">
+        <a href="https://www.airbnb.pt/resources/hosting-homes?persona=guest">
+            Obtenha as últimas novidades sobre a nossa resposta ao COVID-19
+        </a>
+    </div>
+
+    <!-- Search bar -->
+    
+    <div class="searchbar"> <!-- FALTA CONGELAR NO SCROLLING -->
+        <div>
+            <div class="searchbar__position">
+                <div class="searchbar__container">
+                    <div class="searchbar__subcontainer">
+                        <form class="searchbar__form" action="/s/all" method="get" role="search">
+                            <div> <!-- dir=ltr -->
+                                <div class="searchbar__padding">
+                                    <label for="Koan-mobile-p1-koan-search-bar__input" class="searchbar__label">
+                                        <span class="searchbar__label--local">Localização</span>
+                                        <div class="searchbar__label--dispo">
+                                            <button aria-label="Pesquisar" type="submit" class="searchbar__label--bt">
+                                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                    <g fill="none">
+                                                        <path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="searchbar__overflow">
+                                            <input class="searchbar__overflow--input" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="Koan-mobile-p1-koan-search-bar__input" role="combobox" name="query" placeholder="Para onde vai?" type="text" value="">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <span aria-atomic="true" aria-live="polite" role="status" class="searchbar__absolute"></span>
+        </div>
+    </div>
+
+    <header class="searchBg">
+        <div class="searchBg__disposal">
+            <a href="https://www.airbnb.pt/" class="searchBg__link">
+                <svg width="30" height="32" fill="currentcolor" style="display: block;">
+                    <path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="searchBg__flex">
+            <div class="searchBg__container">
+                <div data-nosnippet="true" style="padding-bottom: 16px; position: relative; z-index: 1">
+                    <form action="" style="margin: 0 auto; max-width: 850px;">
+                        <fieldset style="border: 0px; margin: 0px; padding: 0px;">
+                            <div style="align-items: center; display: flex; height: 80px; justify-content: center;">
+                                <label for="">
+                                    <input type="radio" class="searchBg__input" role="tab" checked="">
+                                    <span class="searchBg__textlink">Alojamentos</span>
+                                </label>
+                                <label for="">
+                                    <input type="radio" class="searchBg__input" role="tab">
+                                    <span class="searchBg__textlink">Experiências</span>
+                                </label>
+                                <div style="display: inline-block;">
+                                    <a href="https://www.airbnb.pt/s/experiences/online" class="searchBg__expOnline">
+                                        <div class="searchBg__expOnline--text">Experiências online</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="searchBg__buttons">
+                            <div style="display: flex; flex: 1 1 0%; height: 100%; min-width: 0px; pointer-events: auto;">
+                                <div style="flex: 1 0 0%; min-width: 0px;">
+                                    <div>
+                                        <div class="searchBg__buttons--local">
+                                            <label for="searchBg__buttons--localtitle">
+                                                <div style="position: relative; z-index: 1;">
+                                                    <div style="font-weight: 800; letter-spacing: 0.04em; font-size: 12px; line-height: 16px; padding-bottom: 2px;">Localização</div>
+                                                    <input class="searchBg__buttons--localbt" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch-query-detached-query" role="combobox" name="query" placeholder="Para onde vai?" required="" data-testid="structured-search-input-field-query" value="">
+                                                </div>
+                                            </label>
+                                            <span class=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="align-self: center; border-right: 1px solid #DDDDDD; flex: 0 0 0px; height: 32px;"></div>
+                                <div style="display: flex; flex: 2 0 0%; min-width: 0px;">
+                                    <div class="searchBg__buttons--check">
+                                        <div class="searchBg__buttons--check2">
+                                            <div style="padding: 14px 24px; overflow: hidden; white-space: nowrap; position: relative; width: 100%; z-index: 1;">
+                                                <div style="font-size: 12px; line-height: 16px; font-weight: 800; letter-spacing: 0.04em; padding-bottom: 2px">Check in</div>
+                                                <div class="searchBg__buttons--when">Quando?</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="align-self: center; border-right: 1px solid #DDDDDD; flex: 0 0 0px; height: 32px;"></div>
+                                <div style="display: flex; flex: 2 0 0%; min-width: 0px;">
+                                    <div class="searchBg__buttons--check">
+                                        <div class="searchBg__buttons--check2">
+                                            <div style="padding: 14px 24px; overflow: hidden; white-space: nowrap; position: relative; width: 100%; z-index: 1;">
+                                                <div style="font-size: 12px; line-height: 16px; font-weight: 800; letter-spacing: 0.04em; padding-bottom: 2px">Checkout</div>
+                                                <div class="searchBg__buttons--when">Quando?</div>
+                                            </div>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div style="align-self: center; border-right: 1px solid #DDDDDD; flex: 0 0 0px; height: 32px;"></div>
+                                <div class="searchBg__buttons--guest">
+                                    <div class="searchBg__buttons--guest2">
+                                        <div style="padding: 14px 24px; overflow: hidden; white-space: nowrap; position: relative; width: 100%; z-index: 1;">
+                                            <div style="font-size: 12px; line-height: 16px; font-weight: 800; letter-spacing: 0.04em; padding-bottom: 2px">Hóspedes</div>
+                                            <div class="searchBg__buttons--when">Quantos?</div>
+                                        </div>
+                                    </div>
+                                    <div class="searchBg__buttons--look">
+                                        <button class="searchBg__buttons--lookbt">
+                                            <div style="display: inline-flex; padding: 16px; position: relative; z-index: 1;">
+                                                <div>
+                                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                                                        <g fill="none">
+                                                            <path d="m13 24c6.0751322 0 11-4.9248678 11-11 0-6.07513225-4.9248678-11-11-11-6.07513225 0-11 4.92486775-11 11 0 6.0751322 4.92486775 11 11 11zm8-3 9 9"></path>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 1 0 auto;">
+            <nav style="display: flex; align-items: center; justify-content: flex-end; height: 80px; padding-right: 30px;">
+                <div style="display: flex; flex: auto; justify-content: flex-end; margin-right: 8px;">
+                    <a href="https://www.airbnb.pt/host/homes" class="searchBg__host">
+                        <div style="align-items: center; display: flex; height: 100%; position: relative; z-index: 1;">Seja anfitrião</div>
+                    </a>
+                    <div style="position: relative; display: inline;">
+                        <button type="button" class="searchBg__host" aria-expanded="false" aria-label="Idioma e moeda">
+                            <div style="align-items: center; display: flex; height: 100%; position: relative; z-index: 1;">
+                                <div style="align-items: center; display: flex; height: 18px; position: relative; z-index: 1;" aria-hidden="true">
+                                    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                                        <path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: inline; position: relative;">
+                        <button type="button" class="searchBg__btWide" aria-expanded="false">
+                            <div aria-label="Menu de navegação principal">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                                    <g fill="none" fill-rule="nonzero">
+                                        <path d="m2 16h28"></path>
+                                        <path d="m2 24h28"></path>
+                                        <path d="m2 8h28"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="searchBg__btWide2" aria-hidden="true">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                                    <path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z"></path>
+                                </svg>
+                            </div>
+                            <div aria-label="Tem notificações" class="searchBg__btWide3"></div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Page -->
+
+    <div class="main">
+        <div class="main__header">
+            <div>
+                <span class="main__header--title">O melhor da natureza</span>
+            </div>
+            <div style="padding-top: 20px;">
+                <span class="main__header--phrase">Favoritos organizados pela Airbnb.</span>
+            </div>
+            <div>
+                <button type="button" class="main__header--bt" style="margin-top: 16px;">Inspire-se</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Section -->
+
+    <div class="explore">
+        <div class="explore__paddles">
+            <section>
+                <h1 class="explore__title">Explore as proximidades</h1>
+            </section>
+            <div>
+                <div class="explore__grid">
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Lisboa/homes?place_id=ChIJO_PkYRozGQ0R0DaQ5L3rAAQ&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/f3e70952-58a3-4a50-8674-09ba6b9b2b02.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Lisboa</b></span>
+                              <span>15 minutos de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Santiago/homes?place_id=ChIJja9tSotRGQ0RiwZekB3GbdE&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/0445ba36-5684-4cca-9cb1-418a0ffdcd2f.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Santiago</b></span>
+                              <span>45 minutos de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Vila-Nova-de-Milfontes/homes?place_id=ChIJxYQwEXChGw0RgCH890QVU24&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/c2eba2e9-0d80-4704-9e2c-34ac16316c53.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Vila Nova de Milfontes</b></span>
+                              <span>3 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Braga/homes?place_id=ChIJZ9j1bLz-JA0RGOLRYkEFXbw&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/ce6c498b-b069-401d-84c8-412bb4a4601e.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Braga</b></span>
+                              <span>4,5 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Tomar/homes?place_id=ChIJK8leGat-GA0R6uUjP8gMizY&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/331e6c6a-ba64-4b51-81bf-4d6c610d45a3.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Tomar</b></span>
+                              <span>2 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Quarteira/homes?place_id=ChIJnZ0acaW1Gg0RgQtsUJaiAMU&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/7d80bee1-a510-4950-a1a0-07a4fb25ec2e.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Quarteira</b></span>
+                              <span>3 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Aljezur/homes?place_id=ChIJw4QJoFMVGw0Rxg_DN39zeBA&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/e8d3d6de-40b1-4341-89f2-afb2a1a4f71f.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Aljezur</b></span>
+                              <span>3,5 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                    <div class="explore__scrollable">
+                        <a class="explore__clickable" href="https://www.airbnb.pt/s/Lagos/homes?place_id=ChIJjU0jUEkwGw0RV_waR6OqEFQ&refinement_paths%5B%5D=%2Fhomes&search_type=section_navigation">
+                            <span class="explore__clickable--img">
+                                <div class="explore__clickable--background">
+                                    <img src="https://a0.muscache.com/im/pictures/be4d3ba5-08d7-4afe-95a7-f2da6453886a.jpg?im_q=medq&im_w=720" alt="" style="height: 100%; width: 100%;">
+                                </div>
+                            </span>
+                            <span class="explore__clickable--text">
+                              <span class="explore__clickable--wrapper"><b>Lagos</b></span>
+                              <span>3,5 horas de carro</span>  
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Anywhere Section (FAZER MEDIA QUERY DENTRO DO HTML PARA IMAGEM)-->
+
+    <div style="padding-left: 0px; padding-right: 40px;"> <!-- colocar flex-->
+        <section class="live">
+            <div>
+                <div class="live__box">
+                    <h1 class="live__box--title">Viva em qualquer lugar</h1>
+                </div>  
+            </div>
+        </section>
+        <div style="padding-left: 12px;">
+            <div class="live__grid">
+                <div>
+                    <a style="text-decoration: none;" href="https://www.airbnb.pt/s/homes?ne_lat=63.10927453041205&ne_lng=20.378032635245052&sw_lat=19.990725469587947&sw_lng=-37.23803263524505&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=2&search_type=NAVIGATION_CARD&title_type=CURATED_PROPERTY_TYPE">
+                    <div class="live__size">
+                        <div class="live__radius">
+                            <div class="live__backg">
+                                <div class="live__inset">
+                                    <img style="object-fit: cover; height: 100%; width: 100%;" src="https://a0.muscache.com/im/pictures/7d82ca14-56e5-4465-8218-dcfa7d69b6ac.jpg?im_w=720" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 8px;">
+                            <span class="live__text">Casa Inteiras</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div>
+                    <a style="text-decoration: none;" href="https://www.airbnb.pt/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LISTINGS%3A2400&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=5&property_type_id%5B%5D=6&property_type_id%5B%5D=8&property_type_id%5B%5D=10&property_type_id%5B%5D=12&property_type_id%5B%5D=15&property_type_id%5B%5D=16&property_type_id%5B%5D=17&property_type_id%5B%5D=18&property_type_id%5B%5D=19&property_type_id%5B%5D=23&property_type_id%5B%5D=24&property_type_id%5B%5D=25&property_type_id%5B%5D=28&property_type_id%5B%5D=32&property_type_id%5B%5D=34&property_type_id%5B%5D=44&property_type_id%5B%5D=50&property_type_id%5B%5D=54&property_type_id%5B%5D=57&property_type_id%5B%5D=58&property_type_id%5B%5D=61&property_type_id%5B%5D=63&property_type_id%5B%5D=64&property_type_id%5B%5D=66&property_type_id%5B%5D=67&property_type_id%5B%5D=68&property_type_id%5B%5D=69&property_type_id%5B%5D=62&property_type_id%5B%5D=51&title_type=CURATED_PROPERTY_TYPE">
+                    <div class="live__size">
+                        <div class="live__radius">
+                            <div class="live__backg">
+                                <div class="live__inset">
+                                    <img style="object-fit: cover; height: 100%; width: 100%;" src="https://a0.muscache.com/im/pictures/36f53e61-db8d-403c-9122-5b761c0e4264.jpg?im_w=720" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 8px;">
+                            <span class="live__text">Alojamentos únicos</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div>
+                    <a style="text-decoration: none;" href="https://www.airbnb.pt/s/homes?ne_lat=63.10927453041205&ne_lng=20.378032635245052&sw_lat=19.990725469587947&sw_lng=-37.23803263524505&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=6&property_type_id%5B%5D=10&property_type_id%5B%5D=16&property_type_id%5B%5D=18&property_type_id%5B%5D=34&property_type_id%5B%5D=44&property_type_id%5B%5D=57&property_type_id%5B%5D=58&property_type_id%5B%5D=63&property_type_id%5B%5D=66&property_type_id%5B%5D=69&property_type_id%5B%5D=4&property_type_id%5B%5D=32&property_type_id%5B%5D=17&property_type_id%5B%5D=23&property_type_id%5B%5D=12&property_type_id%5B%5D=24&property_type_id%5B%5D=15&search_type=NAVIGATION_CARD&title_type=CURATED_PROPERTY_TYPE">
+                    <div class="live__size">
+                        <div class="live__radius">
+                            <div class="live__backg">
+                                <div class="live__inset">
+                                    <img style="object-fit: cover; height: 100%; width: 100%;" src="https://a0.muscache.com/im/pictures/7f254627-3922-4880-b8fa-545b8551117e.jpg?im_w=720" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 8px;">
+                            <span class="live__text">Explorações agrícolas e natureza</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div>
+                    <a style="text-decoration: none;" href="https://www.airbnb.pt/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LISTINGS%3A483&room_types%5B%5D=Entire%20home%2Fapt&property_type_id%5B%5D=57&property_type_id%5B%5D=4&property_type_id%5B%5D=32&property_type_id%5B%5D=58&property_type_id%5B%5D=18&property_type_id%5B%5D=22&property_type_id%5B%5D=17&property_type_id%5B%5D=23&property_type_id%5B%5D=63&property_type_id%5B%5D=24&property_type_id%5B%5D=12&property_type_id%5B%5D=19&property_type_id%5B%5D=44&property_type_id%5B%5D=66&property_type_id%5B%5D=34&property_type_id%5B%5D=16&property_type_id%5B%5D=6&property_type_id%5B%5D=69&property_type_id%5B%5D=15&title_type=CURATED_PROPERTY_TYPE">
+                    <div class="live__size">
+                        <div class="live__radius">
+                            <div class="live__backg">
+                                <div class="live__inset">
+                                    <img style="object-fit: cover; height: 100%; width: 100%;" src="https://a0.muscache.com/im/pictures/10a638e1-6aff-4313-8033-1275cec83987.jpg?im_w=720" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-top: 8px;">
+                            <span class="live__text">Animais de estimação permitidos</span>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Become a Host Section (FAZER MEDIA QUERY DENTRO DO HTML PARA IMAGEM)-->
+
+    <div class="host">
+        <div class="host__box">
+            <a href="https://www.airbnb.com/host/homes?locale=pt-PT" style="display: block;">
+                <div style="padding-top: 0%;"></div>
+                <div> <!--position absolute and inset -1px 0px-->
+                    <img class="host__box--pic" src="https://a0.muscache.com/im/pictures/791aba62-2de8-4722-99b5-45838715eb34.jpg?im_w=720" alt="">
+                    <img class="host__box--pic2" src="https://a0.muscache.com/im/pictures/5b4dc94a-0b4c-4c27-b50f-9c5a5b93c775.jpg?im_w=720" alt="">
+                </div>
+                <div class="host__textbox">
+                    <span class="host__textbox--title">Torne-se um anfitrião</span>
+                    <span class="host__textbox--phrase">Ganhe um rendimento extra e consiga novas oportunidades ao partilhar o seu espaço.</span>
+                    <button type="button" class="host__bt" style="margin-top: 16px;">Saiba mais</button>                    
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Discover Experiences Section -->
+
+    <div class="discover">
+        <div class="discover__title">
+            Descubra as Experiências
+        </div>
+        <div class="discover__description">
+            <p>Atividades únicas com especialistas locais, presencialmente ou online.</p>
+        </div>
+        <div class="discover__grid">
+            <a href="https://www.airbnb.pt/s/all?refinement_paths%5B%5D=%2Fplaylists%2F46390&last_search_session_id=e9ea6cf1-fc88-4e4d-805f-bec5ec092fa1&search_type=section_navigation">
+                <div style="padding-right: 12px;">
+                    <img class="discover__picture" src="https://a0.muscache.com/im/pictures/247a1ea3-946d-4eb8-a6ab-e8b9a66846f4.jpg?im_w=720" alt="">
+                    <div>
+                        <span class="discover__picture--title">Coleção em destaque: Wanderlust</span>
+                        <span><br>Viaje a partir de casa com as <br>Experiências Online.</span>
+                    </div>    
+                </div>
+            </a>
+            <a href="https://www.airbnb.pt/s/experiences/online">
+                <div style="padding-right: 12px;">
+                    <img class="discover__picture" src="https://a0.muscache.com/im/pictures/a6b08861-feb8-4a01-a76d-b33d2867b441.jpg?im_w=720" alt="">
+                    <div>
+                        <span class="discover__picture--title">Experiências Online</span>
+                        <span><br>Atividades interativas em direto lideradas por<br> anfitriões.</span>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.airbnb.pt/s/experiences?location_search=NEARBY" target="_blank">
+                <div style="padding-right: 12px;">
+                    <img class="discover__picture" src="https://a0.muscache.com/im/pictures/ad109d56-2421-40cd-98e6-e114160dc85b.jpg?im_w=720" alt="">
+                    <div>
+                        <span class="discover__picture--title">Experiências</span>
+                        <span><br>Coisas locais para fazer, onde quer que esteja.</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footerColumn">
+        <div class="footer">
+            <span class="footer__list--title">Sobre</span>
+            <ul class="footer__list">
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/d/howairbnbworks">Como funciona a Airbnb</a></li>
+                <li class="footer__list--links"><a href="https://news.airbnb.com/br/?region=Portugal">Sala de imprensa</a></li>
+                <li class="footer__list--links"><a href="https://investors.airbnb.com/home/default.aspx">Investidores</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/plus">Airbnb Plus</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/luxury">Airbnb Luxe</a></li>
+                <li class="footer__list--links"><a href="https://www.hoteltonight.com/?utm_source_name=Airbnb&utm_campaign_name=Dr_Us_Web_Airbnb_Footer" target="_blank">HotelTonight</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/work?s=footer">Airbnb para Trabalho</a></li>
+                <li class="footer__list--links"><a href="https://www.youtube.com/airbnb">Possivel gracas aos anfitrioes</a></li>
+                <li class="footer__list--links"><a href="https://careers.airbnb.com/">Carreiras</a></li>
+                <li class="footer__list--links"><a href="https://news.airbnb.com/what-makes-airbnb-airbnb/?_ga=2.172729699.1927825657.1620632505-1880277852.1618597878">Carta dos fundadores</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <span class="footer__list--title">Comunidade</span> 
+            <ul class="footer__list footer__list2x3">
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/diversity">Diversidade e Pertença</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/d/accessibility">Acessibilidade</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/associates?from=footer">Associados da Airbnb</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/d/covid19relief">Alojamentos de linha da frente</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/invite?r=6">Recomendações de hóspedes</a></li>
+                <li class="footer__list--links"><a href="https://pt.airbnb.org/?_ga=2.142262898.1927825657.1620632505-1880277852.1618597878&_set_bev_on_new_domain=1620663246_NGExNDZmNGQzNmMx">Airbnb.org</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <span class="footer__list--title">Hospedar</span>
+            <ul class="footer__list footer__list2x3">
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/host/homes?from_footer=1">Hospedar a sua casa</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/d/onlinehost">Hospedar uma Experiência Online</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/host/experiences">Hospedar uma Experiência</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/help/article/1385">Hospedagem responsável</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/resources/hosting-homes">Centro de Recursos</a></li>
+                <li class="footer__list--links"><a href="https://community.withairbnb.com/t5/Central-da-Comunidade-BrPT/ct-p/central-da-comunidade">Centro da Comunidade</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <span class="footer__list--title">Apoio</span>
+            <ul class="footer__list footer__list2x3">
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/d/covidsafety">A nossa resposta ao COVID-19</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/help/home">Centro de Ajuda</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/help/article/2701/pol%C3%ADtica-de-circunst%C3%A2ncias-atenuantes-e-o-coronav%C3%ADrus-covid19">Opções de cancelamento</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/neighbors">Apoio ao Bairro</a></li>
+                <li class="footer__list--links"><a href="https://www.airbnb.pt/trust">Confiança e Segurança</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+
+    <div class="copyright">
+        <div>
+            <i class="fas fa-globe" style="padding-left: 24px;"></i><a class="copyright__language" href="https://www.airbnb.pt/account-settings/language">Portugues (PT)</a>
+        </div>
+        <div class="copyright__phrase">&#169; 2021 Airbnb, Inc.</div>
+        <div>
+            <ul class="copyright__list">
+                <li><a href="https://www.airbnb.pt/help/article/2855/pol%C3%ADtica-de-privacidade" class="copyright__list--links">Privacidade</a></li>
+                <li><a href="https://www.airbnb.pt/help/article/2908/termos-de-servi%C3%A7o" class="copyright__list--links">Termos</a></li>
+                <li><a href="https://www.airbnb.pt/sitemaps/v2" class="copyright__list--links">Mapa do site</a></li>
+                <li><a href="https://www.airbnb.pt/about/company-details" class="copyright__list--links" target="_blank">Informações da empresa</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+

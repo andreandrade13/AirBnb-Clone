@@ -1,0 +1,76 @@
+/* Block */
+
+    .main {
+        background-image: url("https://a0.muscache.com/im/pictures/b65bef33-07be-4c55-b613-bb990193e8f6.jpg?im_w=720");
+        height: 967px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        position: relative;
+        justify-content: center;
+    }
+
+/* Element */
+
+    .main__header {
+        display: block;
+        width: 280px;
+        justify-content: flex-start;
+        padding: 96px 24px 32px 24px;
+    }
+
+
+/* Modifier */
+
+    .main__header--title {
+        font-size: 45px;
+        letter-spacing: -0.02em;
+        line-height: 40px;
+        font-weight: 700;
+        color: var(--black);
+    }
+
+ 
+    .main__header--phrase {
+        color: var(--black);
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 20px;
+    }
+
+    .main__header--bt {
+        background-color: var(--black);
+        color: var(--white);
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+/* Media queries */
+
+    @media (min-width: 744px) {
+        .main {
+            background-image: url("https://a0.muscache.com/im/pictures/4e9fc041-1c7e-4f2d-b2bd-52c9cdc6a512.jpg?im_w=1440");
+            height: 588px;
+        }
+        .main__header{
+            padding: 300px 24px 32px 50px;
+        }
+    }
+
+    @media (min-width: 950px) {
+        .main {
+            background-image: url("https://a0.muscache.com/im/pictures/ddc7f01f-3fb3-483c-87e6-701dad52c930.jpg?im_w=1920");
+            height: 550px;
+        }
+    }
+
+    @media (min-width: 1128px) {
+        .main__header {
+            width: 320px;
+            padding-bottom: 16px;
+        }
+        .main__header--title {
+            font-size: 60px;
+        }
+    }
